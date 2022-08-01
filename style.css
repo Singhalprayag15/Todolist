@@ -1,0 +1,241 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+#bg{
+background-image: url(./Images/dark\ image.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: auto;
+}
+
+.container{
+    background-color: black;
+    border: none;
+    color: gray;
+    height: 20vh;
+    outline: none;
+}
+
+#todo_container{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+#todo{
+    margin-top: 5rem;
+}
+
+#Heading{
+    color: white;
+}
+
+#main_outDiv{
+    display: none;
+}
+
+.input{
+    margin-left: -10rem;
+    width: 100vw!important;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 60vw;
+}
+
+#submit{
+    border-radius: 0px 10px 10px 0px;
+    width: 7vw;
+}
+
+.btn-danger{
+    --bs-btn-focus-shadow-rgb: white!important;
+}
+
+
+#input_text{
+    width: 40vw;;
+    padding: 1rem 2rem;
+    border-radius: 10px 0px 0px 10px;
+    border: none;  
+    background-color: black;
+    color: grey;
+    outline: none;
+}
+
+#input_text:active{
+    border: none!important;
+}
+
+.output{
+    margin-left: 10rem;
+    background-color: black;
+    color: grey;
+    padding: 1rem 2rem 0rem 2rem;
+    margin-top: 3rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+#clear_btn{
+    margin-top: 4rem;
+    margin-left: 12rem;
+}
+
+.bi{
+    margin: 0rem 0.5rem;
+}
+
+.bi-trash3{
+    color: red!important;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.bi-trash3:hover{
+    color: white!important;
+    background-color: red!important;
+}
+
+.bi-pencil-square,.bi-check-lg{
+    color: green!important;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.bi-pencil-square:hover{
+    color: white!important;
+    background-color: green!important;
+}
+
+.bi-check-lg:hover{
+    color: white!important;
+    background-color: green!important;
+}
+
+.date{
+    margin-right: 1rem;
+    color: blue;
+}
+
+/* Media Qurey */
+
+@media screen and (max-width:1250px) {
+    .output {
+        margin-left: 5rem;
+    }
+    #clear_btn {
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .input {
+        margin-left:-7rem;
+    }
+}
+
+@media screen and (max-width:964px) {
+    #submit{
+        width: 10vw;
+    }
+    #clear_btn{
+        margin-left: 5rem;
+    }
+    .output {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    #todo{
+        margin-top: 4rem;
+    }
+    
+   
+}
+
+@media screen and (max-width:720px){
+    /* #bg{
+        height: 100%;
+    } */
+}
+
+@media screen and (max-width:656px) {
+    #submit {
+        width: 12vw;
+    }
+    #clear_btn {
+        margin-left: 2rem;
+    }
+    
+
+   
+}
+
+@media screen and (max-width:567px) {
+    #input_text{
+        width: 50vw;
+    }
+    #submit{
+        width: 14vw;
+    }
+   .input {
+    margin-left: -5rem;
+    }
+    .output {
+        margin-left: 0.5rem;
+        width: 70vw;
+    }
+   
+}
+
+@media screen and (max-width:567px){
+   
+    #input_text {
+        padding: 0.5rem;
+    }
+    #submit {
+        width: 16vw;
+    }
+    .input {
+        margin-left: -4rem;
+    }
+    .bi{
+        margin: 0rem;
+    }
+    .date{
+        margin-right: 1rem;
+        }
+}
+
+@media screen and (max-width:412px){
+    #submit {
+        width: 18vw;
+    }
+    .output{
+        display: inherit;
+        text-align: center;
+        padding: 1rem;
+    }
+    .container{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:357px){
+    .input {
+        margin-left: -3rem;
+    }
+    #submit {
+        width: 22vw;
+    }
+   
+}
